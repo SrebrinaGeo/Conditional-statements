@@ -1,0 +1,11 @@
+minutes_walk = int(input())
+walks_count = int(input())
+food_calories_per_day = int(input())
+
+sum_minutes_walk = walks_count * minutes_walk
+burnt_calories_per_day = sum_minutes_walk * 5
+
+if burnt_calories_per_day >= food_calories_per_day / 2:
+    print(f'Yes, the walk for your cat is enough. Burned calories per day: {burnt_calories_per_day}.')
+elif burnt_calories_per_day < food_calories_per_day / 2:
+    print(f'No, the walk for your cat is not enough. Burned calories per day: {burnt_calories_per_day}.')
