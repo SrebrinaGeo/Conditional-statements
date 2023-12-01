@@ -1,0 +1,22 @@
+price_luggage_over_20 = float(input())
+kgs_luggage = float(input())
+days_trip = int(input())
+luggage_count = int(input())
+luggage_price = 0
+
+if kgs_luggage < 10:
+    luggage_price = (price_luggage_over_20 * 0.2) * luggage_count
+elif 10 <= kgs_luggage <= 20:
+    luggage_price = (price_luggage_over_20 * 0.5) * luggage_count
+elif kgs_luggage > 20:
+    luggage_price = price_luggage_over_20 * luggage_count
+
+if days_trip > 30:
+    luggage_price += luggage_price * 0.10
+elif 7 <= days_trip <= 30:
+    luggage_price += luggage_price * 0.15
+elif days_trip < 7:
+    luggage_price = luggage_price + (luggage_price * 0.4)
+
+print(f"The total price of bags is: {luggage_price:.2f} lv.")
+
