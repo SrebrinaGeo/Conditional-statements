@@ -1,0 +1,20 @@
+budget = float(input())
+liters_fuel = float(input())
+day = input()
+
+price_fuel = liters_fuel * 2.10
+guide = 100
+sum_safari = price_fuel + guide
+
+if day == 'Saturday':
+    total_sum = sum_safari - sum_safari * 0.1
+elif day == 'Sunday':
+    total_sum = sum_safari - sum_safari * 0.2
+
+if total_sum <= budget:
+    diff = budget - total_sum
+    print(f"Safari time! Money left: {diff:.2f} lv. ")
+elif total_sum > budget:
+    diff = total_sum - budget
+    print(f"Not enough money! Money needed: {diff:.2f} lv.")
+
