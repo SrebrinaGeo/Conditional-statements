@@ -1,0 +1,16 @@
+import math
+
+record_in_secs = float(input())
+distance_in_meters = float(input())
+time_secs_per_meter = float(input())
+
+sum_time_secs = distance_in_meters * time_secs_per_meter
+additional_secs = math.floor(distance_in_meters / 50) * 30
+
+all_time_secs = sum_time_secs + additional_secs
+
+if all_time_secs < record_in_secs:
+    print(f"Yes! The new record is {all_time_secs:.2f} seconds.")
+else:
+    diff = all_time_secs - record_in_secs
+    print(f"No! He was {diff:.2f} seconds slower.")
