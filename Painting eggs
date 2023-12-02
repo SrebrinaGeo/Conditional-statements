@@ -1,0 +1,28 @@
+eggs_size = input()
+eggs_color = input()
+lot_count = int(input())
+total_sum = 0
+
+if eggs_size == "Large":
+    if eggs_color == "Red":
+        total_sum = (lot_count * 16) * 0.65
+    elif eggs_color == "Green":
+        total_sum = (lot_count * 12) * 0.65
+    elif eggs_color == "Yellow":
+        total_sum = (lot_count * 9) * 0.65
+elif eggs_size == "Medium":
+    if eggs_color == "Red":
+        total_sum = (lot_count * 13) * 0.65
+    elif eggs_color == "Green":
+        total_sum = (lot_count * 9) * 0.65
+    elif eggs_color == "Yellow":
+        total_sum = (lot_count * 7) * 0.65
+elif eggs_size == "Small":
+    if eggs_color == "Red":
+        total_sum = (lot_count * 9) * 0.65
+    elif eggs_color == "Green":
+        total_sum = (lot_count * 8) * 0.65
+    elif eggs_color == "Yellow":
+        total_sum = (lot_count * 5) * 0.65
+
+print(f"{total_sum:.2f} leva.")
