@@ -1,0 +1,43 @@
+drink = input()
+sugar = input()
+count_drinks = int(input())
+
+total_sum = 0
+
+if drink == "Espresso":
+    if sugar == "Without":
+        if count_drinks >= 5:
+            total_sum = ((count_drinks * 0.9) * 0.65) * 0.75
+        else:
+            total_sum = (count_drinks * 0.9) * 0.65
+    elif sugar == "Normal":
+        if count_drinks >= 5:
+            total_sum = (count_drinks * 1) * 0.75
+        else:
+            total_sum = count_drinks * 1
+    elif sugar == "Extra":
+        if count_drinks >= 5:
+            total_sum = (count_drinks * 1.2) * 0.75
+        else:
+            total_sum = count_drinks * 1.2
+elif drink == "Cappuccino":
+    if sugar == "Without":
+        total_sum = (count_drinks * 1) * 0.65
+    elif sugar == "Normal":
+        total_sum = count_drinks * 1.2
+    elif sugar == "Extra":
+        total_sum = count_drinks * 1.6
+elif drink == "Tea":
+    if sugar == "Without":
+        total_sum = (count_drinks * 0.5) * 0.65
+    elif sugar == "Normal":
+        total_sum = count_drinks * 0.6
+    elif sugar == "Extra":
+        total_sum = count_drinks * 0.7
+
+if total_sum > 15:
+    total_sum = total_sum * 0.8
+else:
+    total_sum = total_sum
+
+print(f"You bought {count_drinks} cups of {drink} for {total_sum:.2f} lv.")
