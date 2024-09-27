@@ -19,4 +19,3 @@ elif days_trip < 7:
     luggage_price = luggage_price + (luggage_price * 0.4)
 
 print(f"The total price of bags is: {luggage_price:.2f} lv.")
-
