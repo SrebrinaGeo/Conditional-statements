@@ -17,4 +17,3 @@ if total_sum <= budget:
 elif total_sum > budget:
     diff = total_sum - budget
     print(f"Not enough money! Money needed: {diff:.2f} lv.")
-
