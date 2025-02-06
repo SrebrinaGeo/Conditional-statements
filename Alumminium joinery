@@ -59,3 +59,4 @@ elif joinery_count < 10:
     print('Invalid order')
 else:
     print(f'{total_sum:.2f} BGN')
+
