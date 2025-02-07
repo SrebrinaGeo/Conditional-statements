@@ -41,3 +41,4 @@ else:
     total_sum = total_sum
 
 print(f"You bought {count_drinks} cups of {drink} for {total_sum:.2f} lv.")
+
