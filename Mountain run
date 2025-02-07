@@ -14,3 +14,4 @@ if all_time_secs < record_in_secs:
 else:
     diff = all_time_secs - record_in_secs
     print(f"No! He was {diff:.2f} seconds slower.")
+
