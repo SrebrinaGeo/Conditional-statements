@@ -26,3 +26,4 @@ elif eggs_size == "Small":
         total_sum = (lot_count * 5) * 0.65
 
 print(f"{total_sum:.2f} leva.")
+
